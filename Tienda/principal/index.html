@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online</title>
+  <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+
+<header class="header">
+  <img src="./Imagenes/Botas Agua.jpeg" alt="Logo Botas de agua" class="logo">
+  <h1>Mom & dad`s</h1>
+  <h2></h2>
+</header>
+
+<section class="contacto">
+  <p><strong>Teléfonos:</strong> +56 9 5375 4622 / +56 9 3143 6881</p>
+  <p><strong>Horario de atención:</strong><br>
+    Lunes a viernes: 08:00 - 19:00 hrs<br>
+    Sábados, domingos y festivos: 10:00 - 16:00 hrs
+  </p>
+</section>
+
+<section class="precios">
+  <h3>Lista de precios</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Imagen</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Chailitas Nº 29</td>
+        <td>$2.000</td>
+        <td><img src="./Imagenes/Chalitas.jpeg" alt="Chalitas"></td>
+      </tr>
+      <tr>
+        <td>Zapatillas Futbol nike Nº 28</td>
+        <td>$2.000</td>
+        <td><img src="./Imagenes/Zapatillas futbol nike.jpeg" alt="Zapatillas futbol nike"></td>
+      </tr>
+      <tr>
+        <td>Zapatillas Lippi Nº 28</td>
+        <td>$2.000</td>
+        <td><img src="./Imagenes/Zapatillas lippi.jpeg" alt="Zapatillas lippi">
+      <tr>
+        <td>Zapatos de Vestir Nº 28</td>
+        <td>$2.000</td>
+        <td><img src="./Imagenes/Zapatos vestir.jpeg" alt="Zapatos vestir"></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="formulario">
+  <h3>Ingresa tu pedido</h3>
+  <form action="https://formsubmit.co/ruthsepulveda14@gmail.com" method="POST">
+
+
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" placeholder="912345678">
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+
+    <label for="producto">Producto:</label>
+    <select id="producto" name="producto" required>
+      <option value="">Seleccione un producto</option>
+      <option value="Chalitas">Chalitas Nº 29</option>
+      <option value="Zapatillas Futbol nike Nº28">Zapatillas Futbol nike Nº28</option>
+      <option value="Zapatillas Lippi Nº28">Zapatillas Lippi Nº28</option>
+      <option value="Zapatos de vestir Nº28">Zapatos de vestir Nº28</option>
+    </select>
+
+    <label for="direccion">Dirección de entrega:</label>
+    <textarea id="direccion" name="direccion" rows="3" required placeholder="Dirección completa"></textarea>
+
+    <label for="comentarios">Comentarios adicionales:</label>
+    <textarea id="comentarios" name="comentarios" rows="3" placeholder="Opcional"></textarea>
+
+    <button type="submit">Enviar pedido por correo</button>
+    <button type="button" id="btnWhatsapp">Enviar pedido por WhatsApp</button>
+
+  </form>
+</section>
+<footer class="footer">
+  <p>&copy; 2025 Tienda Online</p>
+</footer>
+
+</body>
+</html>

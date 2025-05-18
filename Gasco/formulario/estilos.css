@@ -1,0 +1,33 @@
+body {
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 500;
+    min-width: none;
+}
+#Titulo{
+    margin-left: 5cm;
+   text-align: center;
+    width: 60%;
+}
+.Logo{
+    border-radius: 100px;;
+    right: 50%;
+}
+form{
+    margin: 0 auto;
+    width: 400px;
+    /* Esquema del formulario */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+
+}
+div{
+    box-shadow: #000;
+}
+.uno{
+    margin: 10px;
+    background-color: #6afde6;
+    box-shadow: #ccc;
+
+}
